@@ -20,4 +20,19 @@ while(true){
 4. Выход`;
 
     let choose = Number(prompt(menu));
+
+    switch(choose){
+        case 1:
+            alert(`Питомец "${name}" поел.`);
+            hunger -= 12;
+            happiness -= 5;
+            health += 3;
+            break;
+        case 2: 
+            alert(`Питомец "${name}" поиграл.`);
+            happiness += 7;
+            hunger += 10;
+            health += 2;
+            break;
+    }
 }
