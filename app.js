@@ -50,4 +50,8 @@ while(true){
     if (choose === 4){
         break;
     }
+
+    hunger += 10;
+    happiness -= 8;
+    healt -= 8;
 }
