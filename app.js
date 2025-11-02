@@ -34,5 +34,20 @@ while(true){
             hunger += 10;
             health += 2;
             break;
+        case 3:
+            alert(`Питомец "${name}" поспал.`);
+            happiness += 6;
+            hunger += 15;
+            health += 1;
+            break;
+        case 4: 
+            alert("Выход . . .");
+            break;
+        default:
+            alert("Ошибка: неверно выбран номер действия");
+    }
+
+    if (choose === 4){
+        break;
     }
 }
