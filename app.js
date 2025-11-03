@@ -37,8 +37,8 @@ while(true){
         case 3:
             alert(`Питомец "${name}" поспал.`);
             happiness += 6;
-            hunger += 15;
-            health += 1;
+            hunger += 7;
+            health += 4;
             break;
         case 4: 
             alert("Выход . . .");
@@ -63,7 +63,7 @@ while(true){
         alert(`Шкала голода питомца ${name} больше или равна 100, игра завершена.`);
         break;
     }
-    hunger += 10;
+    hunger += 5;
     happiness -= 8;
-    healt -= 8;
+    health -= 5;
 }
