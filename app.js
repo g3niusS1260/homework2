@@ -51,6 +51,18 @@ while(true){
         break;
     }
 
+    if(health <= 0){
+        alert(`Шкала здоровья питомца ${name} меньше 0, игра завершена.`);
+        break;
+    }
+    if(happiness <= 0){
+        alert(`Шкала счастья питомца ${name} меньше 0, игра завершена.`);
+        break;
+    }
+    if(hunger >= 100){
+        alert(`Шкала голода питомца ${name} больше или равна 100, игра завершена.`);
+        break;
+    }
     hunger += 10;
     happiness -= 8;
     healt -= 8;
